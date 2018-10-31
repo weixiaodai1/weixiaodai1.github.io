@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-31T08:51:02.625Z</updated>
+  <updated>2018-10-31T09:05:15.453Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>third</title>
+    <link href="http://yoursite.com/2018/10/31/third/"/>
+    <id>http://yoursite.com/2018/10/31/third/</id>
+    <published>2018-10-31T09:03:38.000Z</published>
+    <updated>2018-10-31T09:05:15.453Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;视图&quot;&gt;&lt;a href=&quot;#视图&quot; class=&quot;headerlink&quot; title=&quot;视图&quot;&gt;&lt;/a&gt;视图&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/2018/10/31/third/myHexoBlog\source\_posts\third\timg1.png&quot; 
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>second</title>
@@ -27,7 +50,7 @@
     
       
       
-        &lt;h1 id=&quot;图&quot;&gt;&lt;a href=&quot;#图&quot; class=&quot;headerlink&quot; title=&quot;图&quot;&gt;&lt;/a&gt;图&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;//yoursite.com/2018/10/31/second/myHexoBlog\source\_posts\second
+        &lt;h1 id=&quot;图&quot;&gt;&lt;a href=&quot;#图&quot; class=&quot;headerlink&quot; title=&quot;图&quot;&gt;&lt;/a&gt;图&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/2018/10/31/second/myHexoBlog\source\_posts\second\timg1.png&quot; al
       
     
     </summary>
