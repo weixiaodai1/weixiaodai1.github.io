@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小代blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-10-31T06:30:15.805Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>代晓炜</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>second</title>
+    <link href="http://yoursite.com/2018/10/31/second/"/>
+    <id>http://yoursite.com/2018/10/31/second/</id>
+    <published>2018-10-31T03:34:01.000Z</published>
+    <updated>2018-10-31T06:30:15.805Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;图片&quot;&gt;&lt;a href=&quot;#图片&quot; class=&quot;headerlink&quot; title=&quot;图片&quot;&gt;&lt;/a&gt;图片&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>first</title>
+    <link href="http://yoursite.com/2018/10/31/first/"/>
+    <id>http://yoursite.com/2018/10/31/first/</id>
+    <published>2018-10-31T02:48:53.000Z</published>
+    <updated>2018-10-31T03:31:41.676Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;只是字段&quot;&gt;&lt;a href=&quot;#只是字段&quot; class=&quot;headerlink&quot; title=&quot;只是字段&quot;&gt;&lt;/a&gt;只是字段&lt;/h2&gt;&lt;p&gt;​    &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+</feed>
