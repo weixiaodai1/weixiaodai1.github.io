@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="L6Lm9d5Crl">
+  
+  
+  
+  
+  <title>VUE | 小代blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="VUE全家桶GIT地址：https://gitee.com/plusdo/vue-demo Vue 前后端分离 使用Vue的好处 数据架构  技术栈 ES2015     Promise Vue 2.0 https://cn.vuejs.org/index.html   vue-router：处理路由 https://router.vuejs.org/zh-cn/   vuex：处理单项数据绑定">
+<meta name="keywords" content="知识体系">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VUE">
+<meta property="og:url" content="http://yoursite.com/2018/09/03/first/index.html">
+<meta property="og:site_name" content="小代blog">
+<meta property="og:description" content="VUE全家桶GIT地址：https://gitee.com/plusdo/vue-demo Vue 前后端分离 使用Vue的好处 数据架构  技术栈 ES2015     Promise Vue 2.0 https://cn.vuejs.org/index.html   vue-router：处理路由 https://router.vuejs.org/zh-cn/   vuex：处理单项数据绑定">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-05T05:47:23.284Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VUE">
+<meta name="twitter:description" content="VUE全家桶GIT地址：https://gitee.com/plusdo/vue-demo Vue 前后端分离 使用Vue的好处 数据架构  技术栈 ES2015     Promise Vue 2.0 https://cn.vuejs.org/index.html   vue-router：处理路由 https://router.vuejs.org/zh-cn/   vuex：处理单项数据绑定">
+  
+    <link rel="alternative" href="/atom.xml" title="小代blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/timg.jpg" class="js-avatar">
+            
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">代晓炜</a></h1>
+        </hgroup>
+        
+        
+            <form>
+                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder="搜索一下" autocomplete="off">
+            </form>
+            <div id="local-search-result"></div>
+        
+        
+            <script type="text/javascript">
+                (function() {
+                    'use strict';
+                    function getMatchData(keyword, data) {
+                        var matchData = [];
+                        for(var i =0;i<data.length;i++){
+                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
+                                matchData.push(data[i])
+                        }
+                        return matchData;
+                    }
+                    var $input = $('#local-search-input');
+                    var $resultContent = $('#local-search-result');
+                    $input.keyup(function(){
+                        $.ajax({
+                            url: '/search.json',
+                            dataType: "json",
+                            success: function( json ) {
+                                var str='<ul class=\"search-result-list\">';                
+                                var keyword = $input.val().trim().toLowerCase();
+                                $resultContent.innerHTML = "";
+                                if ($input.val().trim().length <= 0) {
+                                    $resultContent.empty();
+                                    $('#switch-area').show();
+                                    return;
+                                }
+                                var results = getMatchData(keyword, json);
+                                if(results.length === 0){
+                                    $resultContent.empty();
+                                    $('#switch-area').show();
+                                    return;
+                                } 
+                                for(var i =0; i<results.length; i++){
+                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
+                                }
+                                str += "</ul>";
+                                $resultContent.empty();
+                                $resultContent.append(str);
+                                $('#switch-area').hide();
+                            }
+                        });
+                    });
+                })();
+            </script>
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                        
+                            <li><a href="/categories/digital">玩转数码</a></li>
+                        
+                            <li><a href="/categories/algorithm">算法学习</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/weixiaodai1/" title="github">github</a>
+                            
+                                <a class="fl weibo" target="_blank" href="https://weibo.com/u/2791048663" title="weibo">weibo</a>
+                            
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/cordova-命令/" style="font-size: 10px;">cordova 命令</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/知识体系/" style="font-size: 10px;">知识体系</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a>
+                    </div>
+                </section>
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://blog.csdn.net/daixiaowei123">csdn</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
+                    
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">代晓炜</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/timg.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">代晓炜</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                
+                    <li><a href="/categories/digital">玩转数码</a></li>
+                
+                    <li><a href="/categories/algorithm">算法学习</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="github" target="_blank" href="https://github.com/weixiaodai1/" title="github">github</a>
+                    
+                        <a class="weibo" target="_blank" href="https://weibo.com/u/2791048663" title="weibo">weibo</a>
+                    
+                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                    
+                </div>
+            </nav>
+        </header>
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-first" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/09/03/first/" class="article-date">
+      <time datetime="2018-09-03T02:48:53.000Z" itemprop="datePublished">2018-09-03</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      VUE
+    </h1>
+  
+
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/知识体系/">知识体系</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="VUE全家桶"><a href="#VUE全家桶" class="headerlink" title="VUE全家桶"></a>VUE全家桶</h1><p>GIT地址：<a href="https://gitee.com/plusdo/vue-demo" target="_blank" rel="noopener">https://gitee.com/plusdo/vue-demo</a></p>
+<h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><ul>
+<li>前后端分离</li>
+<li>使用Vue的好处</li>
+<li>数据<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2></li>
+</ul>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
+<li>ES2015    </li>
+<li>Promise</li>
+<li>Vue 2.0<ul>
+<li><a href="https://cn.vuejs.org/index.html" target="_blank" rel="noopener">https://cn.vuejs.org/index.html</a></li>
+</ul>
+</li>
+<li>vue-router：处理路由<ul>
+<li><a href="https://router.vuejs.org/zh-cn/" target="_blank" rel="noopener">https://router.vuejs.org/zh-cn/</a></li>
+</ul>
+</li>
+<li>vuex：处理单项数据绑定<ul>
+<li><a href="https://vuex.vuejs.org/zh-cn/" target="_blank" rel="noopener">https://vuex.vuejs.org/zh-cn/</a></li>
+</ul>
+</li>
+<li>axios：处理向后端的http资源请求<ul>
+<li><a href="https://github.com/axios/axios" target="_blank" rel="noopener">https://github.com/axios/axios</a></li>
+<li><a href="https://ykloveyxk.github.io/2017/02/25/axios%E5%85%A8%E6%94%BB%E7%95%A5/" target="_blank" rel="noopener">https://ykloveyxk.github.io/2017/02/25/axios%E5%85%A8%E6%94%BB%E7%95%A5/</a></li>
+</ul>
+</li>
+<li>element-ui：基于vue2.0 的组件库，饿了么的这套组件库还挺好用的，功能也全<ul>
+<li><a href="https://element.eleme.io/#/zh-CN" target="_blank" rel="noopener">https://element.eleme.io/#/zh-CN</a></li>
+</ul>
+</li>
+<li>mint-ui：移动端UI<ul>
+<li><a href="https://mint-ui.github.io/#!/zh-cn" target="_blank" rel="noopener">https://mint-ui.github.io/#!/zh-cn</a></li>
+</ul>
+</li>
+<li>sass：专业级CSS扩展语言<ul>
+<li><a href="https://www.sass.hk/" target="_blank" rel="noopener">https://www.sass.hk/</a></li>
+</ul>
+</li>
+<li>Flex: Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。<ul>
+<li>教程1：<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</a></li>
+<li>教程2：<a href="http://blog.csdn.net/qq_23191031/article/details/53084017" target="_blank" rel="noopener">http://blog.csdn.net/qq_23191031/article/details/53084017</a></li>
+</ul>
+</li>
+<li>jwt后台验证，通过vue-router和axios统一处理认证问题</li>
+<li>图标库<ul>
+<li><a href="http://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2" target="_blank" rel="noopener">http://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h2><ul>
+<li><a href="https://github.com/ustbhuangyi/better-scroll" target="_blank" rel="noopener">better-scroll</a>：处理页面滚动操作。</li>
+<li><a href="http://momentjs.cn/" target="_blank" rel="noopener">moment.js</a>：处理时间。</li>
+<li><a href="https://github.com/Vanthink-UED/vue-core-image-upload" target="_blank" rel="noopener">vue-core-image-upload</a>：处理附件上传。</li>
+<li><a href="https://www.npmjs.com/package/vuex-persistedstate" target="_blank" rel="noopener">vuex-persistedstate</a>：vuex插件，处理页面刷新时store中的内容丢失的问题，将store存储在localstorage中</li>
+</ul>
+<h2 id="调试工具"><a href="#调试工具" class="headerlink" title="调试工具"></a>调试工具</h2><ul>
+<li>Chrome</li>
+<li>Vue.js devtools: Chrome插件，查看vuex状态</li>
+<li>console</li>
+</ul>
+<h2 id="参考项目"><a href="#参考项目" class="headerlink" title="参考项目"></a>参考项目</h2><p>可以参考代码进行练习：</p>
+<ul>
+<li><a href="https://github.com/bxm0927/vue-meituan" target="_blank" rel="noopener">https://github.com/bxm0927/vue-meituan</a></li>
+<li><a href="https://github.com/hzzly/xyy-vue" target="_blank" rel="noopener">https://github.com/hzzly/xyy-vue</a></li>
+</ul>
+<h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><p>统一使用vsCode进行开发，安装<code>EditorConfig for VS Code</code>插件处理缩进等问题。</p>
+<h2 id="接口工具"><a href="#接口工具" class="headerlink" title="接口工具"></a>接口工具</h2><p>接口工具统一使用 <a href="http://rapapi.org/platform/home.do" target="_blank" rel="noopener">RAP</a>，提供接口功能和<a href="http://mockjs.com/" target="_blank" rel="noopener">mock</a>服务。</p>
+<p>后台登录地址：<a href="http://server-ip/serverName/rest/login(post)，请求" target="_blank" rel="noopener">http://server-ip/serverName/rest/login(post)，请求</a> 传入参数格式<code>{&quot;username&quot;:&quot;admin&quot;, &quot;password&quot;:&quot;000000&quot;}</code>，登录成功后将返回的token写入localstorage中</p>
+<p>其他请求需要将token写入http的header中的Authorization(自定义)字段,有<code>src/api/api.js</code>统一完成。</p>
+<h2 id="安装及运行"><a href="#安装及运行" class="headerlink" title="安装及运行"></a>安装及运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vue-cli</span></span><br><span class="line"><span class="comment"># 全局安装 vue-cli</span></span><br><span class="line">$ npm install --global vue-cli</span><br><span class="line"><span class="comment"># 创建一个基于 webpack 模板的新项目</span></span><br><span class="line">$ vue init webpack my-project</span><br><span class="line"><span class="comment"># 安装依赖，走你</span></span><br><span class="line">$ <span class="built_in">cd</span> my-project</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装node-sass</span></span><br><span class="line">npm install node-sass</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># serve with hot reload at localhost:8080</span></span><br><span class="line"><span class="comment"># 调试运行，默认启动8080端口</span></span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># build for production with minification</span></span><br><span class="line"><span class="comment"># 编译打包</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># build for production and view the bundle analyzer report</span></span><br><span class="line">npm run build --report</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修复npm安装时报VCBuild不存在的错误, 使用npm安装windows build tools</span></span><br><span class="line">npm install --global --production windows-build-tools</span><br></pre></td></tr></table></figure>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-- build                            // 项目构建(webpack)相关代码</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- build.js                     // 生产环境构建代码</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- check-version.js             // 检查node、npm等版本</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- dev-client.js                // 热重载相关</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- dev-server.js                // 构建本地服务器</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- utils.js                     // 构建工具相关</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- webpack.base.conf.js         // webpack基础配置</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- webpack.dev.conf.js          // webpack开发环境配置</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- webpack.prod.conf.js         // webpack生产环境配置</span></span><br><span class="line">|<span class="string">-- config                           // 项目开发环境配置</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- dev.env.js                   // 开发环境变量</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- index.js                     // 项目一些配置变量</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- prod.env.js                  // 生产环境变量</span></span><br><span class="line">|<span class="string">-- src                              // 源码目录</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- api                          // 统一处理资源请求</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- http.js                  // 处理api服务路径及token拦截功能</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- api.js                   // 处理业务api服务路径</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- assets                       // 资源目录，图片/javascript/css</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- components                   // vue公共组件</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- base                     // 页面基本布局组件</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- config                       // 项目参数配置</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- pages                        // 项目页面，所有项目的页面均放本目录</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- logistics                // 物流页面</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- error                    // 错误页面</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- login                    // 登录页面</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- member                   // 会员管理页面</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- sale                     // 销售页面</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- router                       // 路由配置文件，所有请求跳转配置</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- store                        // vuex的状态管理，单向数据绑定，所有数据状态都存在此处</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- modules                  // 业务模块状态管理</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- actions.js               // 公共action</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- getters.js               // 公共getter</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- index.js                 // vuex统一管理页面，引用 mutations、actions、getters等</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- mutation-types.js        // mutation类型</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">   </span>|<span class="string">-- mutations.js             // 公共mutatios</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- App.vue                      // 页面入口文件</span></span><br><span class="line">|<span class="string">   </span>|<span class="string">-- main.js                      // 程序入口文件，加载各种公共组件</span></span><br><span class="line">|<span class="string">-- static                           // 静态文件，比如一些图片，json数据等</span></span><br><span class="line">|<span class="string">-- .babelrc                         // ES6语法编译配置</span></span><br><span class="line">|<span class="string">-- .editorconfig                    // 定义代码格式</span></span><br><span class="line">|<span class="string">-- .gitignore                       // git上传需要忽略的文件格式</span></span><br><span class="line">|<span class="string">-- README.md                        // 项目说明</span></span><br><span class="line">|<span class="string">-- favicon.ico                      // 图标</span></span><br><span class="line">|<span class="string">-- index.html                       // 首页入口文件，你可以添加一些 meta 信息或同统计代码啥的。</span></span><br><span class="line">|<span class="string">-- package.json                     // 项目基本信息</span></span><br></pre></td></tr></table></figure>
+<h2 id="开发常见问题"><a href="#开发常见问题" class="headerlink" title="开发常见问题"></a>开发常见问题</h2><ul>
+<li>路径带#的问题</li>
+<li>vue-router 拦截的问题</li>
+<li>axios 拦截的问题</li>
+<li>axios 跨域访问问题</li>
+<li>变量处理的问题</li>
+<li>图片加载的问题 require</li>
+<li>props computed watch</li>
+<li>自定义组件传值问题</li>
+<li>打包时包过大的问题</li>
+<li>样式 scope</li>
+<li>vue-router 嵌套</li>
+</ul>
+<p>​    </p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/09/03/first/">VUE</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 代晓炜 的个人博客">代晓炜</a></p>
+        <p><span>发布时间:</span>2018年09月03日 - 10时48分</p>
+        <p><span>最后更新:</span>2018年11月05日 - 13时47分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/03/first/" title="VUE">http://yoursite.com/2018/09/03/first/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/09/03/first/　　作者: 代晓炜" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2018/09/09/six/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          cordova 命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/08/28/third/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#VUE全家桶"><span class="toc-number">1.</span> <span class="toc-text">VUE全家桶</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue"><span class="toc-number">1.1.</span> <span class="toc-text">Vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#架构"><span class="toc-number">1.2.</span> <span class="toc-text">架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#技术栈"><span class="toc-number">1.3.</span> <span class="toc-text">技术栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他组件"><span class="toc-number">1.4.</span> <span class="toc-text">其他组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调试工具"><span class="toc-number">1.5.</span> <span class="toc-text">调试工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考项目"><span class="toc-number">1.6.</span> <span class="toc-text">参考项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发工具"><span class="toc-number">1.7.</span> <span class="toc-text">开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#接口工具"><span class="toc-number">1.8.</span> <span class="toc-text">接口工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装及运行"><span class="toc-number">1.9.</span> <span class="toc-text">安装及运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目录结构"><span class="toc-number">1.10.</span> <span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发常见问题"><span class="toc-number">1.11.</span> <span class="toc-text">开发常见问题</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <section class="changyan" id="comments">
+  <!--<div id="uyan_frame"></div>-->
+  <div id="SOHUCS"></div>
+  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+  <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'xxxx',
+      conf: 'xxxxxxxxx'
+    });
+  </script>
+</section>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/09/09/six/" title="上一篇: cordova 命令">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2018/08/28/third/" title="下一篇: linux">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/10/31/javaIo/">java Io</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/05/second/">IDEA快捷键</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/30/four/">mysql优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/09/six/">cordova 命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/03/first/">VUE</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/28/third/">linux</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/16/five/">http状态码</a></li></ul>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
+
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 代晓炜
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo &nbsp;&nbsp;</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit">极客到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 1;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'xxxxx', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?xxxxxx";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

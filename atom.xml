@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-31T09:46:49.051Z</updated>
+  <updated>2018-11-05T05:58:34.639Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>third</title>
-    <link href="http://yoursite.com/2018/10/31/third/"/>
-    <id>http://yoursite.com/2018/10/31/third/</id>
-    <published>2018-10-31T09:03:38.000Z</published>
-    <updated>2018-10-31T09:46:49.051Z</updated>
+    <title>java Io</title>
+    <link href="http://yoursite.com/2018/10/31/javaIo/"/>
+    <id>http://yoursite.com/2018/10/31/javaIo/</id>
+    <published>2018-10-31T05:57:15.000Z</published>
+    <updated>2018-11-05T05:58:34.639Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;视图&quot;&gt;&lt;a href=&quot;#视图&quot; class=&quot;headerlink&quot; title=&quot;视图&quot;&gt;&lt;/a&gt;视图&lt;/h1&gt;
+        &lt;h1 id=&quot;Java-Io&quot;&gt;&lt;a href=&quot;#Java-Io&quot; class=&quot;headerlink&quot; title=&quot;Java Io&quot;&gt;&lt;/a&gt;Java Io&lt;/h1&gt;
       
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="后端" scheme="http://yoursite.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDEA快捷键</title>
+    <link href="http://yoursite.com/2018/10/05/second/"/>
+    <id>http://yoursite.com/2018/10/05/second/</id>
+    <published>2018-10-05T03:34:01.000Z</published>
+    <updated>2018-11-05T05:47:52.226Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;IDEA快捷键&quot;&gt;&lt;a href=&quot;#IDEA快捷键&quot; class=&quot;headerlink&quot; title=&quot;#IDEA快捷键&quot;&gt;&lt;/a&gt;#IDEA快捷键&lt;/h1&gt;&lt;p&gt;Ctrl+Shift + Enter，语句完成&lt;/p&gt;
+&lt;p&gt;“！”，否定完成，输入表达式时按 
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
       <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
@@ -40,45 +64,118 @@
   </entry>
   
   <entry>
-    <title>second</title>
-    <link href="http://yoursite.com/2018/10/31/second/"/>
-    <id>http://yoursite.com/2018/10/31/second/</id>
-    <published>2018-10-31T03:34:01.000Z</published>
-    <updated>2018-10-31T09:46:46.627Z</updated>
+    <title>mysql优化</title>
+    <link href="http://yoursite.com/2018/09/30/four/"/>
+    <id>http://yoursite.com/2018/09/30/four/</id>
+    <published>2018-09-30T05:40:12.000Z</published>
+    <updated>2018-11-05T05:46:37.897Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;图&quot;&gt;&lt;a href=&quot;#图&quot; class=&quot;headerlink&quot; title=&quot;图&quot;&gt;&lt;/a&gt;图&lt;/h1&gt;
+        &lt;h1 id=&quot;MySQL优化步（InnoDB）&quot;&gt;&lt;a href=&quot;#MySQL优化步（InnoDB）&quot; class=&quot;headerlink&quot; title=&quot;MySQL优化步（InnoDB）&quot;&gt;&lt;/a&gt;MySQL优化步（InnoDB）&lt;/h1&gt;&lt;h2 id=&quot;优化的优先级&quot;&gt;&lt;
       
     
     </summary>
     
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
     
   </entry>
   
   <entry>
-    <title>first</title>
-    <link href="http://yoursite.com/2018/10/31/first/"/>
-    <id>http://yoursite.com/2018/10/31/first/</id>
-    <published>2018-10-31T02:48:53.000Z</published>
-    <updated>2018-10-31T03:31:41.676Z</updated>
+    <title>cordova 命令</title>
+    <link href="http://yoursite.com/2018/09/09/six/"/>
+    <id>http://yoursite.com/2018/09/09/six/</id>
+    <published>2018-09-09T05:51:00.000Z</published>
+    <updated>2018-11-05T05:54:34.137Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;只是字段&quot;&gt;&lt;a href=&quot;#只是字段&quot; class=&quot;headerlink&quot; title=&quot;只是字段&quot;&gt;&lt;/a&gt;只是字段&lt;/h2&gt;&lt;p&gt;​    &lt;/p&gt;
-
+        &lt;h1 id=&quot;cordova命令&quot;&gt;&lt;a href=&quot;#cordova命令&quot; class=&quot;headerlink&quot; title=&quot;cordova命令&quot;&gt;&lt;/a&gt;cordova命令&lt;/h1&gt;&lt;p&gt;安装cordova，必须先安装&lt;a href=&quot;http://nodejs.org/
       
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="cordova" scheme="http://yoursite.com/categories/cordova/"/>
     
     
-      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
+      <category term="cordova 命令" scheme="http://yoursite.com/tags/cordova-%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VUE</title>
+    <link href="http://yoursite.com/2018/09/03/first/"/>
+    <id>http://yoursite.com/2018/09/03/first/</id>
+    <published>2018-09-03T02:48:53.000Z</published>
+    <updated>2018-11-05T05:47:23.284Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;VUE全家桶&quot;&gt;&lt;a href=&quot;#VUE全家桶&quot; class=&quot;headerlink&quot; title=&quot;VUE全家桶&quot;&gt;&lt;/a&gt;VUE全家桶&lt;/h1&gt;&lt;p&gt;GIT地址：&lt;a href=&quot;https://gitee.com/plusdo/vue-demo&quot; targ
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="知识体系" scheme="http://yoursite.com/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux</title>
+    <link href="http://yoursite.com/2018/08/28/third/"/>
+    <id>http://yoursite.com/2018/08/28/third/</id>
+    <published>2018-08-28T09:03:38.000Z</published>
+    <updated>2018-11-05T05:48:45.807Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;LINUX&quot;&gt;&lt;a href=&quot;#LINUX&quot; class=&quot;headerlink&quot; title=&quot;LINUX&quot;&gt;&lt;/a&gt;LINUX&lt;/h1&gt;&lt;h2 id=&quot;系统信息&quot;&gt;&lt;a href=&quot;#系统信息&quot; class=&quot;headerlink&quot; title=&quot;系统信息&quot;
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="命令" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http状态码</title>
+    <link href="http://yoursite.com/2018/06/16/five/"/>
+    <id>http://yoursite.com/2018/06/16/five/</id>
+    <published>2018-06-16T05:49:25.000Z</published>
+    <updated>2018-11-05T05:54:59.764Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;HTTP状态码&quot;&gt;&lt;a href=&quot;#HTTP状态码&quot; class=&quot;headerlink&quot; title=&quot;HTTP状态码&quot;&gt;&lt;/a&gt;HTTP状态码&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;200 OK - [GET]：服务器成功返回用户请求的数据，该操作是幂等的（Idempo
+      
+    
+    </summary>
+    
+      <category term="数据传输" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/"/>
+    
+    
+      <category term="http" scheme="http://yoursite.com/tags/http/"/>
     
   </entry>
   
