@@ -7,20 +7,20 @@
   
   
   
-  <title>java Io | 小代blog</title>
+  <title>python 基础 2 | 小代blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java Io">
-<meta name="keywords" content="java">
+  <meta name="description" content="list  和 tuplelistPython内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。 123&amp;gt;&amp;gt;&amp;gt; classmates = [&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;]&amp;gt;&amp;gt;&amp;gt; classmates[&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;] 变量classmates就是一个list。用l">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java Io">
-<meta property="og:url" content="http://yoursite.com/2018/10/31/javaIo/index.html">
+<meta property="og:title" content="python 基础 2">
+<meta property="og:url" content="http://yoursite.com/2018/11/08/python2/index.html">
 <meta property="og:site_name" content="小代blog">
-<meta property="og:description" content="Java Io">
+<meta property="og:description" content="list  和 tuplelistPython内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。 123&amp;gt;&amp;gt;&amp;gt; classmates = [&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;]&amp;gt;&amp;gt;&amp;gt; classmates[&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;] 变量classmates就是一个list。用l">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-08T03:40:33.825Z">
+<meta property="og:updated_time" content="2018-11-08T07:01:36.220Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java Io">
-<meta name="twitter:description" content="Java Io">
+<meta name="twitter:title" content="python 基础 2">
+<meta name="twitter:description" content="list  和 tuplelistPython内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。 123&amp;gt;&amp;gt;&amp;gt; classmates = [&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;]&amp;gt;&amp;gt;&amp;gt; classmates[&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;] 变量classmates就是一个list。用l">
   
     <link rel="alternative" href="/atom.xml" title="小代blog" type="application/atom+xml">
   
@@ -273,11 +273,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-javaIo" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-python2" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/10/31/javaIo/" class="article-date">
-      <time datetime="2018-10-31T05:57:15.000Z" itemprop="datePublished">2018-10-31</time>
+      <a href="/2018/11/08/python2/" class="article-date">
+      <time datetime="2018-11-08T03:45:49.000Z" itemprop="datePublished">2018-11-08</time>
 </a>
 
     </div>
@@ -291,7 +291,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      java Io
+      python 基础 2
     </h1>
   
 
@@ -307,7 +307,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -317,7 +317,26 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="Java-Io"><a href="#Java-Io" class="headerlink" title="Java Io"></a>Java Io</h1>
+        <h1 id="list-和-tuple"><a href="#list-和-tuple" class="headerlink" title="list  和 tuple"></a>list  和 tuple</h1><h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><p>Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates = [<span class="string">'Michael'</span>, <span class="string">'Bob'</span>, <span class="string">'Tracy'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates</span><br><span class="line">[<span class="string">'Michael'</span>, <span class="string">'Bob'</span>, <span class="string">'Tracy'</span>]</span><br></pre></td></tr></table></figure>
+<p>变量<code>classmates</code>就是一个list。用<code>len()</code>函数可以获得list元素的个数</p>
+<p>list是一个可变的有序表，所以，可以往list中追加元素到末尾：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates.append(<span class="string">'Adam'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates</span><br><span class="line">[<span class="string">'Michael'</span>, <span class="string">'Bob'</span>, <span class="string">'Tracy'</span>, <span class="string">'Adam'</span>]</span><br></pre></td></tr></table></figure>
+<p>也可以把元素插入到指定的位置，比如索引号为<code>1</code>的位置：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates.insert(<span class="number">1</span>, <span class="string">'Jack'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates</span><br><span class="line">[<span class="string">'Michael'</span>, <span class="string">'Jack'</span>, <span class="string">'Bob'</span>, <span class="string">'Tracy'</span>, <span class="string">'Adam'</span>]</span><br></pre></td></tr></table></figure>
+<p>要删除指定位置的元素，用<code>pop(i)</code>方法，其中<code>i</code>是索引位置：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates.pop(<span class="number">1</span>)</span><br><span class="line"><span class="string">'Jack'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>classmates</span><br><span class="line">[<span class="string">'Michael'</span>, <span class="string">'Bob'</span>, <span class="string">'Tracy'</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="tuple"><a href="#tuple" class="headerlink" title="tuple"></a>tuple</h2><p>另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改，</p>
+<h1 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h1><h2 id="if条件判断"><a href="#if条件判断" class="headerlink" title="if条件判断"></a>if条件判断</h2><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if <span class="params">&lt;条件判断<span class="number">1</span>&gt;</span>:</span><br><span class="line">    <span class="params">&lt;执行<span class="number">1</span>&gt;</span></span><br><span class="line">elif <span class="params">&lt;条件判断<span class="number">2</span>&gt;</span>:</span><br><span class="line">    <span class="params">&lt;执行<span class="number">2</span>&gt;</span></span><br><span class="line">elif <span class="params">&lt;条件判断<span class="number">3</span>&gt;</span>:</span><br><span class="line">    <span class="params">&lt;执行<span class="number">3</span>&gt;</span></span><br><span class="line"><span class="symbol">else:</span></span><br><span class="line">    <span class="params">&lt;执行<span class="number">4</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">age = <span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> age &gt;= <span class="number">18</span>:</span><br><span class="line">    print(<span class="string">'adult'</span>)</span><br><span class="line"><span class="keyword">elif</span> age &gt;= <span class="number">6</span>:</span><br><span class="line">    print(<span class="string">'teenager'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'kid'</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h2 id="for…in循环"><a href="#for…in循环" class="headerlink" title="for…in循环"></a>for…in循环</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]:</span><br><span class="line">    sum = sum + x</span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
+<h1 id="dict和set"><a href="#dict和set" class="headerlink" title="dict和set"></a>dict和set</h1><h2 id="dict"><a href="#dict" class="headerlink" title="dict"></a>dict</h2><p>Python内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;<span class="string">'Michael'</span>: <span class="number">95</span>, <span class="string">'Bob'</span>: <span class="number">75</span>, <span class="string">'Tracy'</span>: <span class="number">85</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d[<span class="string">'Michael'</span>]</span><br><span class="line"><span class="number">95</span></span><br></pre></td></tr></table></figure>
+<h2 id="set"><a href="#set" class="headerlink" title="set"></a>set</h2><p>set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = set([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s</span><br><span class="line">&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="string">'Michael'</span>, <span class="string">'Sarah'</span>, <span class="string">'Tracy'</span>, <span class="string">'Bob'</span>, <span class="string">'Jack'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>L[<span class="number">0</span>:<span class="number">3</span>]</span><br><span class="line">[<span class="string">'Michael'</span>, <span class="string">'Sarah'</span>, <span class="string">'Tracy'</span>]</span><br></pre></td></tr></table></figure>
+<p><code>L[0:3]</code>表示，从索引<code>0</code>开始取，直到索引<code>3</code>为止，但不包括索引<code>3</code>。即索引<code>0</code>，<code>1</code>，<code>2</code>，正好是3个元素。 L[:10] 前十个数</p>
+
       
     </div>
     
@@ -325,13 +344,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/10/31/javaIo/">java Io</a></p>
+        <p><span>本文标题:</span><a href="/2018/11/08/python2/">python 基础 2</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 代晓炜 的个人博客">代晓炜</a></p>
-        <p><span>发布时间:</span>2018年10月31日 - 13时57分</p>
-        <p><span>最后更新:</span>2018年11月08日 - 11时40分</p>
+        <p><span>发布时间:</span>2018年11月08日 - 11时45分</p>
+        <p><span>最后更新:</span>2018年11月08日 - 15时01分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/10/31/javaIo/" title="java Io">http://yoursite.com/2018/10/31/javaIo/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/10/31/javaIo/　　作者: 代晓炜" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/11/08/python2/" title="python 基础 2">http://yoursite.com/2018/11/08/python2/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/11/08/python2/　　作者: 代晓炜" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -342,18 +361,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/11/05/markdown/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          markdown语法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/10/05/IDEA/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">IDEA快捷键</div>
+    <a href="/2018/11/08/python1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python 基础之数据类型和变量</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -365,7 +375,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java-Io"><span class="toc-number">1.</span> <span class="toc-text">Java Io</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#list-和-tuple"><span class="toc-number">1.</span> <span class="toc-text">list  和 tuple</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-number">1.1.</span> <span class="toc-text">list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tuple"><span class="toc-number">1.2.</span> <span class="toc-text">tuple</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#条件判断"><span class="toc-number">2.</span> <span class="toc-text">条件判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#if条件判断"><span class="toc-number">2.1.</span> <span class="toc-text">if条件判断</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#循环"><span class="toc-number">3.</span> <span class="toc-text">循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#for…in循环"><span class="toc-number">3.1.</span> <span class="toc-text">for…in循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#dict和set"><span class="toc-number">4.</span> <span class="toc-text">dict和set</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#dict"><span class="toc-number">4.1.</span> <span class="toc-text">dict</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#set"><span class="toc-number">4.2.</span> <span class="toc-text">set</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#函数"><span class="toc-number">5.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#切片"><span class="toc-number">5.1.</span> <span class="toc-text">切片</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -438,13 +448,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/11/05/markdown/" title="上一篇: markdown语法">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2018/10/05/IDEA/" title="下一篇: IDEA快捷键">
+            <a href="/2018/11/08/python1/" title="下一篇: python 基础之数据类型和变量">
                 <i class="fa fa-angle-right"></i>
             </a>
         

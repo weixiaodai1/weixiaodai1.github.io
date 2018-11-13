@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-05T05:58:34.639Z</updated>
+  <updated>2018-11-08T07:01:36.220Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,80 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python 基础 2</title>
+    <link href="http://yoursite.com/2018/11/08/python2/"/>
+    <id>http://yoursite.com/2018/11/08/python2/</id>
+    <published>2018-11-08T03:45:49.000Z</published>
+    <updated>2018-11-08T07:01:36.220Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;list-和-tuple&quot;&gt;&lt;a href=&quot;#list-和-tuple&quot; class=&quot;headerlink&quot; title=&quot;list  和 tuple&quot;&gt;&lt;/a&gt;list  和 tuple&lt;/h1&gt;&lt;h2 id=&quot;list&quot;&gt;&lt;a href=&quot;#list&quot; c
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python 基础之数据类型和变量</title>
+    <link href="http://yoursite.com/2018/11/08/python1/"/>
+    <id>http://yoursite.com/2018/11/08/python1/</id>
+    <published>2018-11-08T02:23:12.000Z</published>
+    <updated>2018-11-08T03:44:34.847Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;数据类型和变量&quot;&gt;&lt;a href=&quot;#数据类型和变量&quot; class=&quot;headerlink&quot; title=&quot;数据类型和变量&quot;&gt;&lt;/a&gt;数据类型和变量&lt;/h1&gt;&lt;h2 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown语法</title>
+    <link href="http://yoursite.com/2018/11/05/markdown/"/>
+    <id>http://yoursite.com/2018/11/05/markdown/</id>
+    <published>2018-11-05T06:36:16.000Z</published>
+    <updated>2018-11-05T07:15:42.641Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;markdown基本语法&quot;&gt;&lt;a href=&quot;#markdown基本语法&quot; class=&quot;headerlink&quot; title=&quot;markdown基本语法&quot;&gt;&lt;/a&gt;markdown基本语法&lt;/h1&gt;&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;
+      
+    
+    </summary>
+    
+      <category term="语法" scheme="http://yoursite.com/categories/%E8%AF%AD%E6%B3%95/"/>
+    
+    
+      <category term="语法" scheme="http://yoursite.com/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java Io</title>
     <link href="http://yoursite.com/2018/10/31/javaIo/"/>
     <id>http://yoursite.com/2018/10/31/javaIo/</id>
     <published>2018-10-31T05:57:15.000Z</published>
-    <updated>2018-11-05T05:58:34.639Z</updated>
+    <updated>2018-11-08T03:40:33.825Z</updated>
     
     <summary type="html">
     
@@ -32,7 +101,7 @@
     
     </summary>
     
-      <category term="后端" scheme="http://yoursite.com/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
     
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
@@ -41,8 +110,8 @@
   
   <entry>
     <title>IDEA快捷键</title>
-    <link href="http://yoursite.com/2018/10/05/second/"/>
-    <id>http://yoursite.com/2018/10/05/second/</id>
+    <link href="http://yoursite.com/2018/10/05/IDEA/"/>
+    <id>http://yoursite.com/2018/10/05/IDEA/</id>
     <published>2018-10-05T03:34:01.000Z</published>
     <updated>2018-11-05T05:47:52.226Z</updated>
     
@@ -65,8 +134,8 @@
   
   <entry>
     <title>mysql优化</title>
-    <link href="http://yoursite.com/2018/09/30/four/"/>
-    <id>http://yoursite.com/2018/09/30/four/</id>
+    <link href="http://yoursite.com/2018/09/30/mysql/"/>
+    <id>http://yoursite.com/2018/09/30/mysql/</id>
     <published>2018-09-30T05:40:12.000Z</published>
     <updated>2018-11-05T05:46:37.897Z</updated>
     
@@ -88,8 +157,8 @@
   
   <entry>
     <title>cordova 命令</title>
-    <link href="http://yoursite.com/2018/09/09/six/"/>
-    <id>http://yoursite.com/2018/09/09/six/</id>
+    <link href="http://yoursite.com/2018/09/09/cordova/"/>
+    <id>http://yoursite.com/2018/09/09/cordova/</id>
     <published>2018-09-09T05:51:00.000Z</published>
     <updated>2018-11-05T05:54:34.137Z</updated>
     
@@ -110,11 +179,11 @@
   </entry>
   
   <entry>
-    <title>VUE</title>
-    <link href="http://yoursite.com/2018/09/03/first/"/>
-    <id>http://yoursite.com/2018/09/03/first/</id>
+    <title>VUE 基础</title>
+    <link href="http://yoursite.com/2018/09/03/vue/"/>
+    <id>http://yoursite.com/2018/09/03/vue/</id>
     <published>2018-09-03T02:48:53.000Z</published>
-    <updated>2018-11-05T05:47:23.284Z</updated>
+    <updated>2018-11-08T03:41:33.701Z</updated>
     
     <summary type="html">
     
@@ -125,17 +194,17 @@
     
     </summary>
     
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="知识体系" scheme="http://yoursite.com/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/"/>
+      <category term="VUE" scheme="http://yoursite.com/tags/VUE/"/>
     
   </entry>
   
   <entry>
     <title>linux</title>
-    <link href="http://yoursite.com/2018/08/28/third/"/>
-    <id>http://yoursite.com/2018/08/28/third/</id>
+    <link href="http://yoursite.com/2018/08/28/linux/"/>
+    <id>http://yoursite.com/2018/08/28/linux/</id>
     <published>2018-08-28T09:03:38.000Z</published>
     <updated>2018-11-05T05:48:45.807Z</updated>
     
@@ -157,8 +226,8 @@
   
   <entry>
     <title>http状态码</title>
-    <link href="http://yoursite.com/2018/06/16/five/"/>
-    <id>http://yoursite.com/2018/06/16/five/</id>
+    <link href="http://yoursite.com/2018/06/16/http/"/>
+    <id>http://yoursite.com/2018/06/16/http/</id>
     <published>2018-06-16T05:49:25.000Z</published>
     <updated>2018-11-05T05:54:59.764Z</updated>
     
