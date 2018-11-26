@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-20T07:47:51.549Z</updated>
+  <updated>2018-11-26T05:47:48.127Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jvm gc</title>
+    <link href="http://yoursite.com/2018/11/26/jvm-gc/"/>
+    <id>http://yoursite.com/2018/11/26/jvm-gc/</id>
+    <published>2018-11-26T05:39:36.000Z</published>
+    <updated>2018-11-26T05:47:48.127Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;JVM垃圾回收（GC）&quot;&gt;&lt;a href=&quot;#JVM垃圾回收（GC）&quot; class=&quot;headerlink&quot; title=&quot;JVM垃圾回收（GC）&quot;&gt;&lt;/a&gt;JVM垃圾回收（GC）&lt;/h1&gt;&lt;h2 id=&quot;GC的基本原理&quot;&gt;&lt;a href=&quot;#GC的基本原理&quot; c
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jvm</title>
+    <link href="http://yoursite.com/2018/11/26/jvm/"/>
+    <id>http://yoursite.com/2018/11/26/jvm/</id>
+    <published>2018-11-26T02:37:53.000Z</published>
+    <updated>2018-11-26T05:38:41.769Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;jvm基本原理&quot;&gt;&lt;a href=&quot;#jvm基本原理&quot; class=&quot;headerlink&quot; title=&quot;jvm基本原理&quot;&gt;&lt;/a&gt;jvm基本原理&lt;/h1&gt;&lt;h3 id=&quot;java文件&quot;&gt;&lt;a href=&quot;#java文件&quot; class=&quot;headerlink&quot; 
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>mysql基础</title>

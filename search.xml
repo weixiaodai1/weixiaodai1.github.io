@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[jvm gc]]></title>
+    <url>%2F2018%2F11%2F26%2Fjvm-gc%2F</url>
+    <content type="text"><![CDATA[JVM垃圾回收（GC）GC的基本原理将内存中不再被引用的对象进行回收，GC中用于回收的方法称为收集器。垃圾：不再被引用的对象。 由于GC需要消耗一些资源和时间，Java在对对象的生命周期特征进行分析后，按照新生代、旧生代的方式来对对象进行收集，以尽可能的缩短GC对应用造成的暂停。 对新生代的对象的收集称为minor GC； 对旧生代的对象的收集称为Full GC； 程序中主动调用System.gc()的GC为Full GC。 Java垃圾回收是单独的后台线程gc执行的，自动运行无需显示调用。即使主动调用了java.lang.System.gc()，该方法也只会提醒系统进行垃圾回收，但系统不一定会回应，可能会不予理睬。 判断一块内存空间是否符合回收标准：（1）对象赋予了空值，且之后再未调用（obj = null;） （2）对象赋予了新值，即重新分配了内存空间（obj = new Obj();） 内存泄漏​ 程序中保留着对永远不再使用的对象的引用。因此这些对象不回被GC回收，却一直占用内存空间却毫无用处。即：1）对象是可达的；2）对象是无用的。满足这两个条件即可判定为内存泄漏。 应确保不需要的对象不可达，通常采用将对象字段设置为null的方式，或从容器collection中移除对象。局部变量不再使用时无需显示设置为null，因为对局部变量的引用会随着方法的退出而自动清除。 内存泄露的原因1）全局集合；2）缓存；3）ClassLoader 内存调优调优目的减少GC的频率尤其是Full GC的次数，过多的GC会占用很多系统资源影响吞吐量。特别要关注Full GC，因为它会对整个堆进行整理。 主要手段JVM调优主要通过配置JVM的参数来提高垃圾回收的速度，合理分配堆内存各部分的比例。 导致Full GC的几种情况和调优策略 旧生代空间不足调优时尽量让对象在新生代GC时被回收、让对象在新生代多存活一段时间和不要创建过大的对象及数组避免直接在旧生代创建对象 持久代（Pemanet Generation）空间不足增大Perm Gen空间，避免太多静态对象 统计得到的GC后晋升到旧生代的平均大小大于旧生代剩余空间控制好新生代和旧生代的比例 System.gc()被显示调用垃圾回收不要手动触发，尽量依靠JVM自身的机制 堆内存比例不良设置会导致什么后果1）新生代设置过小 一是新生代GC次数非常频繁，增大系统消耗；二是导致大对象直接进入旧生代，占据了旧生代剩余空间，诱发Full GC 2）新生代设置过大 一是新生代设置过大会导致旧生代过小（堆总量一定），从而诱发Full GC；二是新生代GC耗时大幅度增加 一般说来新生代占整个堆1/3比较合适 3）Survivor设置过小 导致对象从eden直接到达旧生代，降低了在新生代的存活时间 4）Survivor设置过大 导致eden过小，增加了GC频率 另外，通过-XX:MaxTenuringThreshold=n来控制新生代存活时间，尽量让对象在新生代被回收 JVM提供两种较为简单的GC策略的设置方式1）吞吐量优先 JVM以吞吐量为指标，自行选择相应的GC策略及控制新生代与旧生代的大小比例，来达到吞吐量指标。这个值可由-XX:GCTimeRatio=n来设置 2）暂停时间优先 JVM以暂停时间为指标，自行选择相应的GC策略及控制新生代与旧生代的大小比例，尽量保证每次GC造成的应用停止时间都在指定的数值范围内完成。这个值可由-XX:MaxGCPauseRatio=n来设置 JVM常见配置 堆设置 -Xms:初始堆大小 -Xmx:最大堆大小 -XX:NewSize=n:设置年轻代大小 -XX:NewRatio=n:设置年轻代和年老代的比值。如:为3，表示年轻代与年老代比值为1：3，年轻代占整个年轻代年老代和的1/4 -XX:SurvivorRatio=n:年轻代中Eden区与两个Survivor区的比值。注意Survivor区有两个。如：3，表示Eden：Survivor=3：2，一个Survivor区占整个年轻代的1/5 -XX:MaxPermSize=n:设置持久代大小 收集器设置 -XX:+UseSerialGC:设置串行收集器 -XX:+UseParallelGC:设置并行收集器 -XX:+UseParalledlOldGC:设置并行年老代收集器 -XX:+UseConcMarkSweepGC:设置并发收集器 垃圾回收统计信息 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:filename 并行收集器设置 -XX:ParallelGCThreads=n:设置并行收集器收集时使用的CPU数。并行收集线程数。 -XX:MaxGCPauseMillis=n:设置并行收集最大暂停时间 -XX:GCTimeRatio=n:设置垃圾回收时间占程序运行时间的百分比。公式为1/(1+n) 并发收集器设置 -XX:+CMSIncrementalMode:设置为增量模式。适用于单CPU情况。 -XX:ParallelGCThreads=n:设置并发收集器年轻代收集方式为并行收集时，使用的CPU数。并行收集线程数。 参考链接：]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jvm]]></title>
+    <url>%2F2018%2F11%2F26%2Fjvm%2F</url>
+    <content type="text"><![CDATA[jvm基本原理java文件1234567891011// Test.javapublic class Test &#123; public static void main(String[] args) &#123; int a = 0xae; int b = 0x10; int c = a + b; int d = c + 1; String s; s = "hello"; &#125;&#125; 编译命令12# javac Test.java# javap Test 编译该文件：javac Test.java得到Test.class，然后javap -c Test即得到：输出1234567891011121314151617181920212223242526Compiled from "Test.java"public class Test &#123; public Test(); Code: 0: aload_0 // 从局部变量0向堆栈加载引用 1: invokespecial #1 // 在对象objectref上调用实例方法并将结果放在堆栈上（可能是无效的）; 该方法由常量池中的方法引用索引标识（indexbyte1 &lt;&lt; 8 + indexbyte2） 4: return public static void main(java.lang.String[]); Code: 0: sipush 174 //将一个短片作为整数值推入堆栈 3: istore_1 //将int值1加载到堆栈上 4: bipush 16 6: istore_2 7: iload_1 //从局部变量1 加载一个int 值 8: iload_2 9: iadd 10: istore_3 11: iload_3 12: iconst_1 13: iadd 14: istore 4 16: ldc #2 // String hello 18: astore 5 20: return&#125; java 字节码指令表java 字节码指令表]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mysql基础]]></title>
     <url>%2F2018%2F11%2F19%2Fmysql2%2F</url>
     <content type="text"><![CDATA[MySQL 基础常用命令]]></content>
