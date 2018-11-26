@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mysql基础]]></title>
+    <url>%2F2018%2F11%2F19%2Fmysql2%2F</url>
+    <content type="text"><![CDATA[MySQL 基础常用命令]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python 基础 2]]></title>
     <url>%2F2018%2F11%2F08%2Fpython2%2F</url>
     <content type="text"><![CDATA[list 和 tuplelistPython内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。 123&gt;&gt;&gt; classmates = ['Michael', 'Bob', 'Tracy']&gt;&gt;&gt; classmates['Michael', 'Bob', 'Tracy'] 变量classmates就是一个list。用len()函数可以获得list元素的个数 list是一个可变的有序表，所以，可以往list中追加元素到末尾： 123&gt;&gt;&gt; classmates.append('Adam')&gt;&gt;&gt; classmates['Michael', 'Bob', 'Tracy', 'Adam'] 也可以把元素插入到指定的位置，比如索引号为1的位置： 123&gt;&gt;&gt; classmates.insert(1, 'Jack')&gt;&gt;&gt; classmates['Michael', 'Jack', 'Bob', 'Tracy', 'Adam'] 要删除指定位置的元素，用pop(i)方法，其中i是索引位置： 1234&gt;&gt;&gt; classmates.pop(1)'Jack'&gt;&gt;&gt; classmates['Michael', 'Bob', 'Tracy'] tuple另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改， 条件判断if条件判断12345678if &lt;条件判断1&gt;: &lt;执行1&gt;elif &lt;条件判断2&gt;: &lt;执行2&gt;elif &lt;条件判断3&gt;: &lt;执行3&gt;else: &lt;执行4&gt; 1234567age = 3if age &gt;= 18: print('adult')elif age &gt;= 6: print('teenager')else: print('kid') 循环for…in循环1234sum = 0for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]: sum = sum + xprint(sum) dict和setdictPython内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。 123&gt;&gt;&gt; d = &#123;'Michael': 95, 'Bob': 75, 'Tracy': 85&#125;&gt;&gt;&gt; d['Michael']95 setset和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。 123&gt;&gt;&gt; s = set([1, 2, 3])&gt;&gt;&gt; s&#123;1, 2, 3&#125; 函数切片123&gt;&gt;&gt; L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']&gt;&gt;&gt; L[0:3]['Michael', 'Sarah', 'Tracy'] L[0:3]表示，从索引0开始取，直到索引3为止，但不包括索引3。即索引0，1，2，正好是3个元素。 L[:10] 前十个数]]></content>
